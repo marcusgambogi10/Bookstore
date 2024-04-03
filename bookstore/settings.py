@@ -22,7 +22,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 
 # SECURITY WARNING: keep the secret key used in production secret!
 SECRET_KEY = "django-insecure-)xt9+30b_i$@u#dqy5n=7-s6q4kq*mi0xzw5)hv#j8%q6t)!q6"
-#%30_00z6th=9_#8$gj045(z*^4y5+t4lmmaj#fj-#tnrr6op7t
+# %30_00z6th=9_#8$gj045(z*^4y5+t4lmmaj#fj-#tnrr6op7t
 # SECURITY WARNING: don't run with debug turned on in production!
 
 
@@ -36,7 +36,7 @@ INSTALLED_APPS = [
     "django.contrib.messages",
     "rest_framework",
     "django.contrib.staticfiles",
-    'rest_framework.authtoken',
+    "rest_framework.authtoken",
     "debug_toolbar",
     "order",
     "product",
@@ -88,7 +88,7 @@ DATABASES = {
         "USER": os.environ.get("SQL_USER", "user"),
         "PASSWORD": os.environ.get("SQL_PASSWORD", "password"),
         "HOST": os.environ.get("SQL_HOST", "localhost"),
-        "PORT": os.environ.get("SQL_PORT", "5432")
+        "PORT": os.environ.get("SQL_PORT", "5432"),
     }
 }
 
@@ -122,7 +122,7 @@ TIME_ZONE = "UTC"
 USE_I18N = True
 
 USE_TZ = True
- 
+
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/4.2/howto/static-files/
@@ -135,13 +135,13 @@ STATIC_URL = "static/"
 DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
 
 REST_FRAMEWORK = {
-    'DEFAULT_PAGINATION_CLASS': 'rest_framework.pagination.PageNumberPagination',
-    'PAGE_SIZE': 10,
-    'DEFAULT_AUTHENTICATION_CLASSES': [
-        'rest_framework.authentication.BasicAuthentication',
-        'rest_framework.authentication.SessionAuthentication',
-        'rest_framework.authentication.TokenAuthentication',
-    ]
+    "DEFAULT_PAGINATION_CLASS": "rest_framework.pagination.PageNumberPagination",
+    "PAGE_SIZE": 10,
+    "DEFAULT_AUTHENTICATION_CLASSES": [
+        "rest_framework.authentication.BasicAuthentication",
+        "rest_framework.authentication.SessionAuthentication",
+        "rest_framework.authentication.TokenAuthentication",
+    ],
 }
 
 INTERNAL_IPS = [
@@ -149,9 +149,6 @@ INTERNAL_IPS = [
 ]
 
 
-
 DEBUG = int(os.environ.get("DEBUG", default=0))
 
-ALLOWED_HOSTS =  ["*", "https://ebac-bookstore-ab40a816177e.herokuapp.com/"]
-
- 
+ALLOWED_HOSTS = ["*", "https://ebac-bookstore-ab40a816177e.herokuapp.com/"]
