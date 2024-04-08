@@ -17,6 +17,7 @@ djangorestframework = "^3.14.0"
 flake8 = "^7.0.0"
 make = "^0.1.6.post2"
 whitenoise = "^6.6.0"
+gunicorn = "^21.2.0"
 
 
 [build-system]
