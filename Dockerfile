@@ -55,7 +55,6 @@ RUN poetry install --no-dev
 
 
 # quicker install as runtime deps are already installed
-RUN poetry python manage.py migrate
 RUN poetry install
 RUN poetry lock
 
