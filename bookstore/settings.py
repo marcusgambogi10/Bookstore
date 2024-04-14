@@ -28,6 +28,8 @@ SECRET_KEY = "django-insecure-)xt9+30b_i$@u#dqy5n=7-s6q4kq*mi0xzw5)hv#j8%q6t)!q6
 
 # Application definition
 
+ALLOWED_HOSTS = ["localhost", "127.0.0.1", "bookstoreapi-ebac.herokuapp.com/"]
+
 INSTALLED_APPS = [
     "django.contrib.admin",
     "django.contrib.auth",
@@ -73,10 +75,6 @@ TEMPLATES = [
 ]
 
 WSGI_APPLICATION = "bookstore.wsgi.application"
-
-STATIC_ROOT = BASE_DIR / "staticfiles"
-STATICFILES_STORAGE = "whitenoise.storage.CompressedManifestStaticFilesStorage"
-
 
 # Database
 # https://docs.djangoproject.com/en/4.2/ref/settings/#databases
@@ -151,4 +149,6 @@ INTERNAL_IPS = [
 
 DEBUG = int(os.environ.get("DEBUG", default=0))
 
-ALLOWED_HOSTS = ["localhost", "127.0.0.1", "bookstoreapi-ebac-6062c24827f3.herokuapp.com/"]
+STATICFILES_STORAGE = "whitenoise.storage.CompressedManifestStaticFilesStorage"
+
+STATIC_ROOT = BASE_DIR / "staticfiles"
