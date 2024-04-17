@@ -149,6 +149,6 @@ INTERNAL_IPS = [
 ]
 
 
-DEBUG = int(os.environ.get("DEBUG", default=0))
+DEBUG = True
 
-ALLOWED_HOSTS = ["localhost", "127.0.0.1", "bookstoreapi-ebac-6062c24827f3.herokuapp.com/"]
+ALLOWED_HOSTS = ["marcusgambogi10.pythonanywhere.com"]
